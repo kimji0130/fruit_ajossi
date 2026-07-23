@@ -1,22 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from './assets/vite.svg'
+// import heroImg from './assets/hero.png'
+import Header from "./components/Header"
+import Search from "./components/Search"
+import FruitList from "./components/FruitList"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
+    <Header />
+    <Search />
+    <FruitList />
+  
+      {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
-        <div>
-          <h1>Get started</h1>
+
+        <div className="container">
+          <h1>과일가게 아죠씨</h1>
+          <input type="text" placeholder="과일을 검색하세요." />
+          <h2>오늘의 과일</h2>
+          <div className="fruit-list">
+            <div>사과</div>
+            <div>바나나</div>
+            <div>수박</div>
+            <div>참외</div>
+            <div>복숭아</div>
+            <div>포도</div>
+          </div>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -114,7 +132,7 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section id="spacer"></section> */}
     </>
   )
 }
