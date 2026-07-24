@@ -1,11 +1,27 @@
+import FruitCard from "./FruitCard";
+
 function FruitList({fruits}){
-  console.log(fruits);
-  console.log(fruits[0]);
   
+  // console.log(fruits);
+  // console.log(fruits[0]);
   return(
+    // <div>
+    //   Fruit LIst
+    // </div>
+
     <div>
-      Fruit LIst
+      {fruits.map((fruit) => (
+        <FruitCard
+          key = {fruit.id}
+          name = {fruit.name}
+          price = {fruit.price}
+          img = {fruit.img}
+        // <p>{fruit.name}</p>
+        />
+      ))}
     </div>
+  
+    
   );
 }
 

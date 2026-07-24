@@ -8,6 +8,7 @@ import FruitList from "./components/FruitList"
 import "./App.css"
 import apple from "./assets/apple.png";
 import banana from "./assets/banana.png";
+import abocado from "./assets/abocado.png";
 
 
 function App() {
@@ -26,6 +27,12 @@ function App() {
       name: "바나나",
       price: 2500,
       img: banana,
+    },
+    {
+      id: 3,
+      name: "아보카도",
+      price: 1500,
+      img: abocado,
     }
   ];
 
@@ -34,11 +41,11 @@ function App() {
     <Header />
     <Search />
     <FruitList fruits={fruits} />
+
+
     {/* react가 내부적으로 FruitList({fruits:fruits}); 이렇게 호출한 것과 동일 */}
 
   
-
-      
       {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -163,4 +170,4 @@ function App() {
 }
 
 
-export default App
+export default App;
