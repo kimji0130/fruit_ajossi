@@ -5,17 +5,40 @@
 import Header from "./components/Header"
 import Search from "./components/Search"
 import FruitList from "./components/FruitList"
-import './App.css'
+import "./App.css"
+import apple from "./assets/apple.png";
+import banana from "./assets/banana.png";
+
 
 function App() {
   // const [count, setCount] = useState(0)
+ const fruits= [
+  // console.log()는 확인하고 싶은 변수와 같은 범위(scope) 안에서 써야 해.
+    {
+      id: 1,
+      name:"사과",
+      price: 3000,
+      img: apple,
+
+    },
+    {
+      id: 2,
+      name: "바나나",
+      price: 2500,
+      img: banana,
+    }
+  ];
 
   return (
     <>
     <Header />
     <Search />
-    <FruitList />
+    <FruitList fruits={fruits} />
+    {/* react가 내부적으로 FruitList({fruits:fruits}); 이렇게 호출한 것과 동일 */}
+
   
+
+      
       {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -135,6 +158,9 @@ function App() {
       <section id="spacer"></section> */}
     </>
   )
+  
+  
 }
+
 
 export default App
