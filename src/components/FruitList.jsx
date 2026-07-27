@@ -1,4 +1,4 @@
-import FruitCard from "./FruitCard";
+import FruitCard from "./FruitCard.jsx"
 
 function FruitList({fruits}){
   

@@ -1,6 +1,7 @@
 // import apple from "../assets/apple.png"
 // import banana from "../assets/banana.png"
 // import abocado from "../assets/abocado.png"
+// 이미 App.jsx에서 import 하고 있으므로 재차 불러올 필요없음..
 
 function FruitCard({name, price, img}) {
   return (

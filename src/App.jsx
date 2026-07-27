@@ -13,6 +13,7 @@ import abocado from "./assets/abocado.png";
 
 function App() {
   // const [count, setCount] = useState(0)
+  
  const fruits= [
   // console.log()는 확인하고 싶은 변수와 같은 범위(scope) 안에서 써야 해.
     {
@@ -36,12 +37,18 @@ function App() {
     }
   ];
 
+  const result= fruits.filter((fruit)=>{
+    console.log("사");
+    return fruit.name.includes("사");
+  });
+  
   return (
     <>
     <Header />
     <Search />
-    <FruitList fruits={fruits} />
-
+    {/* Search fruits={result} => 이건 검색창을 그리는 컴포넌트기 떄문에 과일 목록인 fruits를 받을 필요가 없는거야.*/}
+    {/* <FruitList fruits={fruits} />  과일 목록을 그리는 건 FruitList야.. 그러므로 result를 넘기는곳은 FruitList fruits={result}가 되는거지..*/}
+    <FruitList fruits={result}/>
 
     {/* react가 내부적으로 FruitList({fruits:fruits}); 이렇게 호출한 것과 동일 */}
 
