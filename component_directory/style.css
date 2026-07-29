@@ -1,0 +1,6 @@
+body{margin:0; padding:0; font-size:13px; color:#fff; background:#242222;}
+.wrapper{position:relative; display:flex; padding:5px;}
+.left-wrap,.right-wrap{display:flex; flex:1; flex-wrap:nowrap; align-content:center; justify-content:center; align-items:center; height:auto; padding:10px; border-radius: 6px; border:2px solid #40f877;}
+.left-wrap{margin-right:5px;}
+/* .right-wrap{} */
+h1::before{display:block; background-image: url('./images/checkk-square.png'); width:15px; height:15px;}
