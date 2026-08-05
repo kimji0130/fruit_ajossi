@@ -19,14 +19,19 @@ If you are developing a production application, we recommend using TypeScript wi
 
 feat: Header 컴포넌트 생성
   - 컴포넌트 분리
+  - 
 feat: Home 페이지 생성(main page)
   - 폴더 구조
   - Git 커밋
+  - 
 feat: 상품 카드 UI
   - CSS 구조
+  - 
 feat: 상품 데이터 연결
+
 feat: 장바구니 기능
   - React Router
+  - 
 feat: Firebase 로그인
   - Firebase
   - 상태 관리
