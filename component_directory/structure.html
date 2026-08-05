@@ -8,36 +8,50 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="misson_box">
-      <!-- left-wrap -->
-      <div class="left-wrap">
-        <h1>미션 1.</h1>
-        <p class="question">Q. 검색 (filter)은 어디에서 하는 것이 가장 자연스러울까?</p>
-        <div class="answer">
-          <p class="ta_c">지금 Search에서 사용자가 입력하면 search 값은 바뀌고 있어.</p>
-          <ul>
-            <li class="choice_A">A. Search -> FruitList <span>직접 보내준다.</span></li>
-            <li class="choice_B">B. App -> 검색 수행 -> FruitList <span>App이 검색한 뒤 보내준다.</span></li>
-          </ul>
-          <p class="sub_tip">React에서는 A와 B 중 언던 구조가 더 맞을까? (정답말고 이유도 같이 생각해볼 것!)</p>
-        </div>
-      </div><!-- // left-wrap -->
+    <div class="container">
+      <div class="misson_box">
+        <!-- left-wrap -->
+        <div class="left-wrap">
+          <h1>미션 1.</h1>
+          <p class="question">Q. 검색 (filter)은 어디에서 하는 것이 가장 자연스러울까?</p>
+          <div class="answer">
+            <p class="ta_c">지금 Search에서 사용자가 입력하면 search 값은 바뀌고 있어.</p>
+            <ul>
+              <li class="choice_A">A. Search -> FruitList <span>직접 보내준다.</span></li>
+              <li class="choice_B">B. App -> 검색 수행 -> FruitList <span>App이 검색한 뒤 보내준다.</span></li>
+            </ul>
+            <p class="sub_tip">React에서는 A와 B 중 언던 구조가 더 맞을까? (정답말고 이유도 같이 생각해볼 것!)</p>
+          </div>
+        </div><!-- //left-wrap -->
 
-      <!-- right-wrap -->
-      <div class="right-wrap">
-        <h1 class="chk_answer">B.</h1>
-        <p class="question">App이 검색을 하고 수행을 해서 fruitList에서 찾아가지고 다시 내보내 준다.</p>
-        <div class="answer"></div>
-      </div><!-- // right-wrap -->
+        <!-- right-wrap -->
+        <div class="right-wrap">
+          <h1 class="chk_answer">B.</h1>
+          <p class="question">App이 검색을 하고 수행을 해서 fruitList에서 찾아가지고 다시 내보내 준다.</p>
+          <div class="answer"></div>
+        </div><!-- //right-wrap -->
 
-      <div class="result_box">
-        <h1 class="chk_answer ta_c">B. App</h1>
-        <p class="question">App이 검색을 하고 수행을 해서 fruitList에서 찾아가지고 다시 내보내 준다.</p>
-        <div class="answer">App이 모든 데이터를 가지고 있기 때문에 App이 정답이다.</div>
-      </div>
-    </div><!-- // misson_box -->
-
+        <!-- result_box -->
+        <div class="result_box active">
+          <h1 class="chk_answer ta_c c_org">B. App</h1>
+          <p class="question">App이 검색을 하고 수행을 해서 fruitList에서 찾아가지고 다시 내보내 준다.</p>
+          <div class="answer">App이 모든 데이터를 가지고 있기 때문에 App이 정답이다.</div>
+        </div><!-- //result_box -->
+      </div><!-- //misson_box -->
+      
+    </div><!-- //container -->
   </div><!-- //wrapper -->
-  
+ 
+  <script>
+    function setActive(e){
+      // 모든 버튼에서 active클래스 제거 
+      const buttons = document.querySelectorAll('.right-box');
+      buton.forEach(btn => {btn.classList.remove('active');
+        
+      //클릭한 버튼에 active class추가
+      e.classList.add('active');
+      });
+    }
+  </script>
 </body>
 </html>

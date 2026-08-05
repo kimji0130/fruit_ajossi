@@ -5,17 +5,30 @@ body{margin:0; padding:0; font-size:15px; color:#fff; background:#242222;}
 .ta_l{text-align:left;}
 .ta_r{text-align:right;}
 
-.wrapper{position:relative; display:flex; padding:5px;}
-.left-wrap,.right-wrap{display:flex; flex:1; flex-wrap:wrap; align-content:center; justify-content:center; align-items:center; height:auto; padding:10px; border-radius: 6px; border:2px solid #40f877;}
-.left-wrap{margin:5px 5px 5px 0;}
-/* .right-wrap{} */
+/* color */
+.c_org{color:#fd922e;}
+
+/* .wrapper{} */
+
+.container{position:relative; display:flex; padding:5px;}
+
 h1{vertical-align:middle;}
 h1::before{display:inline-block; content: ""; background-image:url('./images/question_w.png'); background-size:32px 32px; width:32px; height:32px; vertical-align:middle;}
 /* h1::before{display:inline-block; content: ""; background-image:url('./images/checkk-square.png'); background-size:32px 32px; width:32px; height:32px; vertical-align:middle;} */
 h1.chk_answer{margin:0;}
 h1.chk_answer::before{display:inline-block; content: ""; background-image:url('./images/idea.png'); background-size:30px 30px; width:32px; height:32px; vertical-align:middle;}
 
+.left-wrap,.right-wrap{display:flex; flex:1; flex-wrap:wrap; align-content:center; justify-content:center; align-items:center; height:auto; padding:10px; margin:5px 5px 5px 0; border-radius: 6px; border:2px solid #40f877;}
+/* .left-wrap{} */
+
+.right-wrap{cursor:pointer;}
+.right-wrap:hover{border:2px solid #fd922e; display:none; cursor:pointer;}
+.right-wrap:hover + .result_box{cursor:pointer; display:block; cursor:pointer;}
+/* .right-wrap:active{border:2px solid #40f877; cursor:pointer;} */
+
+/* result_box */
 p.question{font-weight:700;}
 p.sub_tip{font-size:12px; text-decoration:underline; text-indent:-20px; padding:0 10px 0 20px; line-height:18px;}
 p.sub_tip::before{display:inline-block; content:""; margin-right:5px; background-image:url('./images/hint.png'); background-size:16px 16px; width:16px; height:16px; vertical-align:middle; text-align:center;}
-.result_box{margin-top:10px; padding:10px; border-radius:6px; border:2px solid #fd922e;}
+.result_box{display:none; cursor:pointer; margin:5px 5px 5px 0; padding:10px; border-radius:6px; border:2px solid #fd922e; cursor:pointer;}
+
