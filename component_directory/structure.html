@@ -43,6 +43,21 @@
   </div><!-- //wrapper -->
  
   <script>
+    let timeoutId = null;
+
+    // 마우스가 나갔을 떄 바로 끄지 않고 약간의 시간을 줌
+    const handleMouseLeave = () =>{
+      timeoutId = setTimeout (() => {
+        setIsHovered(false);
+      }, 150); //150ms 지연
+    };
+    
+    const handleMouseEnter = () =>{
+      clearTimeout(timeoutId); // 다시 들어오면 닫기 취소
+      setIsHovered(true);
+    };
+
+
     function setActive(e){
       // 모든 버튼에서 active클래스 제거 
       const buttons = document.querySelectorAll('.right-box');
